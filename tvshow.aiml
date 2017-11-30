@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- TV-SERIE -->
+  <category>
+      <pattern><set>recommendation</set> TV-SERIE</pattern>
+      <template>Wat voor soort <set name="medium">tv-serie</set> wil je kijken?</template>
+  </category>
+  
+  <category>
+      <pattern><set>recommendation</set> SERIE</pattern>
+      <template>Wat voor soort <set name="medium">tv-serie</set> wil je kijken?</template>
+  </category>
+  
+  <category>
+      <pattern><set>recommendation</set> TV</pattern>
+      <template>Wat voor soort <set name="medium">tv-serie</set> wil je kijken?</template>
+  </category>
+</aiml>

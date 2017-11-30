@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  
+  <!-- FILM -->
+  <category>
+      <pattern><set>recommendation</set> FILM</pattern>
+      <template>
+      <think><set name="medium">film</set></think>
+      Wat voor soort film wil je kijken?
+      </template>
+  </category>
+  
+  <category>
+      <pattern><set>genres</set></pattern>
+      <template>
+      <think><set name="genre"><input /></set></think>
+        <condition name="genre" value="actie">
+            Kijk je deze film (genre: actie) alleen?
+        </condition>
+        <condition name="genre" value="drama">
+            Kijk je deze film (genre: drama) alleen?
+        </condition>
+        <condition name="genre" value="komedie">
+            Kijk je deze film (genre: komedie) alleen?
+        </condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NEE</pattern>
+      <that>Kijk je deze film (genre: actie) alleen?</that>
+      <template>Met wie ga je samen kijken?</template>
+  </category>
+  
+  <category>
+      <pattern>JA</pattern>
+      <that>Kijk je deze film (genre: actie) alleen?</that>
+      <template>Ben je jonger dan 16?</template>
+  </category>
+  
+  <!--<category>
+      <pattern><set>bezvnw</set><set>partners</set></pattern>
+      <that>Met wie ga je samen kijken?</that>
+      <template>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16?</template>
+  </category>-->
+</aiml>
