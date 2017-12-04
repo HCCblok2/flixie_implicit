@@ -123,7 +123,7 @@
 
     <!-- actie -->
     <category>
-      <pattern><set>moviesaction</set></pattern>
+      <pattern><set>MOVIESACTION</set></pattern>
       <that>DE BESTE ACTIEFILMS ^ </that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -133,7 +133,7 @@
 
     <!-- drama -->
     <category>
-      <pattern><set>moviesdrama</set></pattern>
+      <pattern><set>MOVIESDRAMA</set></pattern>
       <that>DE BESTE DRAMAFILM ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -142,7 +142,7 @@
     </category>
 
     <category>
-      <pattern><set>moviesdrama</set></pattern>
+      <pattern><set>MOVIESDRAMA</set></pattern>
       <that>DE BESTE DRAMAFILMS ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -152,7 +152,7 @@
 
     <!-- komedie -->
     <category>
-      <pattern><set>moviescomedy</set></pattern>
+      <pattern><set>MOVIESCOMEDY</set></pattern>
       <that>DE BESTE KOMEDIEFILMS ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -162,7 +162,7 @@
 
     <!-- trilogie -->
     <category>
-      <pattern><set>trilogy</set></pattern>
+      <pattern><set>TRILOGY</set></pattern>
       <template>
         <think><set name="keuze"><input /></set></think>
         Dus je wilt Men in Black kijken? Welk deel?
@@ -170,7 +170,7 @@
     </category>
 
     <category>
-      <pattern><set>trilogy</set></pattern>
+      <pattern><set>TRILOGY</set></pattern>
       <that>^ WELK DEEL?</that>
       <template>
         <input />, goede keuze! Veel kijkplezier!

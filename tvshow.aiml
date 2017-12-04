@@ -135,7 +135,7 @@
 
     <!-- keuze actie  -->
     <category>
-      <pattern><set>tvshowsaction</set></pattern>
+      <pattern><set>TVSHOWSACTION</set></pattern>
       <that>DE BESTE ACTIESERIES ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -145,7 +145,7 @@
 
     <!-- keuze drama -->
     <category>
-      <pattern><set>tvshowsdrama</set></pattern>
+      <pattern><set>TVSHOWSDRAMA</set></pattern>
       <that>DE BESTE DRAMASERIES ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
@@ -155,7 +155,7 @@
 
     <!-- keuze komedie -->
     <category>
-      <pattern><set>tvshowscomedy</set></pattern>
+      <pattern><set>TVSHOWSCOMEDY</set></pattern>
       <that>DE BESTE KOMEDIESERIES ^</that>
       <template>
         <think><set name="keuze"><input /></set></think>
