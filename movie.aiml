@@ -132,7 +132,6 @@
     <!-- actie -->
     <category>
       <pattern><set>movies</set></pattern>
-      <that>DE BESTE *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
