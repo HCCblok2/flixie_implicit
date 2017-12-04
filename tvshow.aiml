@@ -144,34 +144,15 @@
         </template>
     </category>
 
-    <!-- keuze actie  -->
+    <!-- keuze maken  -->
     <category>
-      <pattern><set>tvshowsaction</set></pattern>
-      <that>DE BESTE ACTIESERIES *</that>
+      <pattern><set>tvshows</set></pattern>
+      <that>DE BESTE *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
       </template>
     </category>
 
-    <!-- keuze drama -->
-    <category>
-      <pattern><set>tvshowsdrama</set></pattern>
-      <that>DE BESTE DRAMASERIES *</that>
-      <template>
-        <think><set name="keuze"><input /></set></think>
-        <get name="keuze" />, goede keuze! Veel kijkplezier!
-      </template>
-    </category>
-
-    <!-- keuze komedie -->
-    <category>
-      <pattern><set>tvshowscomedy</set></pattern>
-      <that>DE BESTE KOMEDIESERIES *</that>
-      <template>
-        <think><set name="keuze"><input /></set></think>
-        <get name="keuze" />, goede keuze! Veel kijkplezier!
-      </template>
-    </category>
   </topic>
 </aiml>

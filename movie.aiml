@@ -131,38 +131,8 @@
 
     <!-- actie -->
     <category>
-      <pattern><set>moviesaction</set></pattern>
-      <that>DE BESTE ACTIEFILMS *</that>
-      <template>
-        <think><set name="keuze"><input /></set></think>
-        <get name="keuze" />, goede keuze! Veel kijkplezier!
-      </template>
-    </category>
-
-    <!-- drama -->
-    <category>
-      <pattern>
-        <set>MOVIESDRAMA</set></pattern>
-      <that>DE BESTE DRAMAFILM *</that>
-      <template>
-        <think><set name="keuze"><input /></set></think>
-        <get name="keuze" />, goede keuze! Veel kijkplezier!
-      </template>
-    </category>
-
-    <category>
-      <pattern><set>moviesdrama</set></pattern>
-      <that>DE BESTE DRAMAFILMS *</that>
-      <template>
-        <think><set name="keuze"><input /></set></think>
-        <get name="keuze" />, goede keuze! Veel kijkplezier!
-      </template>
-    </category>
-
-    <!-- komedie -->
-    <category>
-      <pattern><set>moviescomedy</set></pattern>
-      <that>DE BESTE KOMEDIEFILMS *</that>
+      <pattern><set>movies</set></pattern>
+      <that>DE BESTE *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
