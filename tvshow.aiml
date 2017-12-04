@@ -38,25 +38,67 @@
       </template>
   </category>
 
+  <!-- actie minderjarig -->
   <category>
-    <pattern><input /></pattern>
-    <that>Ik heb de volgende * voor minderjarige kijkers: ^</that>
+    <pattern><set>moviesaction</set></pattern>
+    <that>Ik heb de volgende actietitels voor minderjarige kijkers: ^</that>
     <template>
-      <think><set name="keuze" /><input /></think>
+      <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
+  <!-- drama minderjarig -->
   <category>
-    <pattern><input /></pattern>
-    <that>De beste titels voor genre * zijn: ^</that>
+    <pattern><set>moviesdrama</set></pattern>
+    <that>Ik heb de volgende dramatitel voor minderjarige kijkers: ^</that>
     <template>
-      <think><set name="keuze" /><input /></think>
+      <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- kijk niet alleen -->
+  <!-- komedie minderjarig -->
+  <category>
+    <pattern><set>moviescomedy</set></pattern>
+    <that>Ik heb de volgende komedietitel voor minderjarige kijkers: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- actie meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'actie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- drama meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'drama' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- komedie meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'komedie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- kijkt niet alleen -->
   <category>
       <pattern><set>nee</set></pattern>
       <that>Kijk je deze serie _ alleen</that>
@@ -76,13 +118,13 @@
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste titels voor genre 'actie' zijn: Arrow en Blindspot.
+              De beste actitetitels voor minderjarige kijkers zijn: Arrow en Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste titel voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash.
+              De beste dramatitels voor minderjarige kijkers zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
           </condition>
-          <condition name="genre" value="comedy">
-              De beste titels voor genre 'comedy' zijn: How I Met Your Mother, Modern Family en Rick and Morty.
+          <condition name="genre" value="komedie">
+              De beste komedietitels voor minderjarige kijkers zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
           </condition>
       </template>
   </category>
@@ -92,13 +134,13 @@
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-            De beste titels voor genre 'actie' zijn: The Punisher, Arrow en Blindspot.
+            De beste titels voor genre 'actie' zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste titels voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash.
+            De beste titels voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
         </condition>
-        <condition name="genre" value="comedy">
-            De beste titels voor genre 'komedie' zijn: How I Met Your Mother, Modern Family en Rick and Morty.
+        <condition name="genre" value="komedie">
+            De beste titels voor genre 'komedie' zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -118,13 +160,13 @@
       <that>Ben je jonger dan 16</that>
       <template>
         <condition name="genre" value="actie">
-            De beste titels voor genre 'actie' zijn: The Punisher, Arrow en Blindspot.
+            De beste actietitels om alleen te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste titels voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash.
+            De beste dramatitels om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
         </condition>
-        <condition name="genre" value="comedy">
-            De beste titels voor genre 'komedie' zijn: How I Met Your Mother, Modern Family en Rick and Morty.
+        <condition name="genre" value="komedie">
+            De beste komedietitels om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -135,13 +177,13 @@
       <that>Ben je jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste titels voor genre 'actie' zijn: Arrow en Blindspot.
+              De beste actietitels voor minderjarigen om alleen te kijken zijn: Arrow en Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste titel voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash.
+              De beste dramatitels voor minderjarigen om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
           </condition>
-          <condition name="genre" value="comedy">
-              De beste titels voor genre 'comedy' zijn: How I Met Your Mother, Modern Family en Rick and Morty.
+          <condition name="genre" value="komedie">
+              De beste komedietitels voor minderjarigen om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
           </condition>
       </template>
   </category>

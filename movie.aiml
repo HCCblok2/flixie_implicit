@@ -56,36 +56,96 @@
       </template>
   </category>
 
+  <!-- actie minderjarig -->
   <category>
-    <pattern><input /></pattern>
-    <that>Ik heb de volgende * voor minderjarige kijkers: ^</that>
+    <pattern><set>moviesaction</set></pattern>
+    <that>Ik heb de volgende actietitels voor minderjarige kijkers: ^</that>
     <template>
-      <think><set name="keuze" /><input /></think>
+      <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
+  <!-- drama minderjarig -->
   <category>
-    <pattern><input /></pattern>
-    <that>De beste titels voor genre * zijn: ^</that>
+    <pattern><set>moviesdrama</set></pattern>
+    <that>Ik heb de volgende dramatitel voor minderjarige kijkers: ^</that>
     <template>
-      <think><set name="keuze" /><input /></think>
+      <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
+  <!-- komedie minderjarig -->
+  <category>
+    <pattern><set>moviescomedy</set></pattern>
+    <that>Ik heb de volgende komedietitel voor minderjarige kijkers: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- actie meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'actie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- drama meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'drama' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- komedie meerderjarig -->
+  <category>
+    <pattern></pattern>
+    <that>De beste titels voor genre 'komedie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- trilogie -->
+  <category>
+    <pattern><set>trilogy</set></pattern>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      Dus je wilt <input /> kijken? Welk deel?
+    </template>
+  </category>
+
+  <category>
+    <pattern><set>trilogy</set></pattern>
+    <that>^ Welk deel?</that>
+    <template>
+      <input />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- kijkt samen; geen minderjarigen -->
   <category>
       <pattern><set>nee</set></pattern>
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-            De beste titels voor genre 'actie' zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+            De beste actietitels om samen met <get name="partner"/> te kijken zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste titels voor genre 'drama' zijn: 12 Years A Slave, Forrest Gump en Intouchables.
+            De beste dramatitels om samen met <get name="partner"/> te kijken zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3, The Big Short en She's The Man.
+            De beste komedietitels om samen met <get name="partner"/> te kijken zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -104,13 +164,13 @@
       <that>Ben je jonger dan 16</that>
       <template>
         <condition name="genre" value="actie">
-            De beste titels voor genre 'actie' zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+            De beste titels voor genre 'actie' zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste titels voor genre 'drama' zijn: 12 Years A Slave, Forrest Gump en Intouchables.
+            De beste titels voor genre 'drama' zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3, The Big Short en She's The Man.
+            De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -121,13 +181,13 @@
       <that>Ben je jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste titels voor genre 'actie' zijn: Star Wars: Rogue One en Doctor Strange.
+              De beste actietitels voor minderjarige kijkers zijn zijn: Star Wars: Rogue One en Doctor Strange. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste titel voor genre 'drama' is: Forrest Gump.
+              De beste dramatitel voor minderjarige kijkers is: Forrest Gump. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3 en She's The Man.
+              De beste komedietitels voor minderjarige kijkers zijn: Men in Black 1,2,3 en She's The Man. Welke wil je zien?
           </condition>
       </template>
   </category>
