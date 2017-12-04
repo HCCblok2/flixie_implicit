@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-  
+
   <!-- FILM -->
   <category>
       <pattern><set>recommendation</set> FILM</pattern>
@@ -9,7 +9,7 @@
       Wat voor soort film wil je kijken?
       </template>
   </category>
-  
+
   <category>
       <pattern><set>genres</set></pattern>
       <template>
@@ -25,81 +25,81 @@
         </condition>
       </template>
   </category>
-  
+
   <!-- kijk niet alleen -->
   <category>
-      <pattern>NEE</pattern>
+      <pattern><set>nee</set></pattern>
       <that>Kijk je deze film _ alleen</that>
       <template>Met wie ga je samen kijken?</template>
   </category>
-  
+
   <category>
       <pattern>^<set>partners</set></pattern>
       <think><set name="partner"><input /></set></think>
       <that>Met wie ga je samen kijken</that>
       <template>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16?</template>
   </category>
-  
+
   <category>
-      <pattern>JA</pattern>
+      <pattern><set>ja</set></pattern>
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste titels voor genre 'actie' zijn: Star Wars: Rogue One en Doctor Strange.
+              Ik heb de volgende actietitels voor minderjarige kijkers: Star Wars: Rogue One en Doctor Strange. Welke zou je willen zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste titel voor genre 'drama' is: Forrest Gump.
+              Ik heb de volgende actietitel voor minderjarige kijkers: Forrest Gump.
           </condition>
-          <condition name="genre" value="comedy">
-              De beste titels voor genre 'comedy' is: Men in Black 1,2,3 en She's The Man.
+          <condition name="genre" value="komedie">
+              Ik heb de volgende komedietitel voor minderjarige kijkers: Men in Black 1,2,3 en She's The Man. Welke zou je willen zien?
           </condition>
       </template>
   </category>
-  
+
   <category>
-      <pattern>NEE</pattern>
+      <pattern><set>nee</set></pattern>
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
             De beste titels voor genre 'actie' zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
-        </condition>    
+        </condition>
         <condition name="genre" value="drama">
             De beste titels voor genre 'drama' zijn: 12 Years A Slave, Forrest Gump en Intouchables.
         </condition>
-        <condition name="genre" value="comedy">
+        <condition name="genre" value="komedie">
             De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3, The Big Short en She's The Man.
         </condition>
       </template>
   </category>
-  
+
   <!-- kijkt alleen -->
   <category>
-      <pattern>JA</pattern>
+      <pattern><set>ja</set></pattern>
       <think><set name="partner">alleen</set></think>
       <that>Kijk je deze film _ alleen</that>
       <template>Ben je jonger dan 16?</template>
   </category>
-  
+
   <!-- kijkt alleen; niet jonger dan 16 -->
   <category>
-      <pattern>NEE</pattern>
+      <pattern><set>nee</set></pattern>
       <that>Ben je jonger dan 16</that>
       <template>
         <condition name="genre" value="actie">
             De beste titels voor genre 'actie' zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
-        </condition>    
+        </condition>
         <condition name="genre" value="drama">
             De beste titels voor genre 'drama' zijn: 12 Years A Slave, Forrest Gump en Intouchables.
         </condition>
-        <condition name="genre" value="comedy">
+        <condition name="genre" value="komedie">
             De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3, The Big Short en She's The Man.
         </condition>
       </template>
   </category>
-  
+
   <!-- kijkt alleen; jonger dan 16 -->
   <category>
-      <pattern>JA</pattern>
+      <pattern><set>ja</set></pattern>
       <that>Ben je jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
@@ -108,8 +108,8 @@
           <condition name="genre" value="drama">
               De beste titel voor genre 'drama' is: Forrest Gump.
           </condition>
-          <condition name="genre" value="comedy">
-              De beste titels voor genre 'comedy' is: Men in Black 1,2,3 en She's The Man.
+          <condition name="genre" value="komedie">
+              De beste titels voor genre 'komedie' zijn: Men in Black 1,2,3 en She's The Man.
           </condition>
       </template>
   </category>
