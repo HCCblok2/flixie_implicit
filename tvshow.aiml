@@ -4,10 +4,12 @@
   <category>
       <pattern><set>recommendation</set> TV-SERIE</pattern>
       <template>
-      <think><set name="medium">serie</set></think>
+      <think><set name="medium">serie</set>
+      <set name="topic">serie</set></think>
       Wat voor soort tv-serie wil je kijken?</template>
   </category>
 
+<topic name="serie">
   <category>
       <pattern><set>recommendation</set> SERIE</pattern>
       <template>
@@ -38,109 +40,52 @@
       </template>
   </category>
 
-  <!-- actie minderjarig -->
-  <category>
-    <pattern><set>moviesaction</set></pattern>
-    <that>Ik heb de volgende actietitels voor minderjarige kijkers: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- drama minderjarig -->
-  <category>
-    <pattern><set>moviesdrama</set></pattern>
-    <that>Ik heb de volgende dramatitel voor minderjarige kijkers: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- komedie minderjarig -->
-  <category>
-    <pattern><set>moviescomedy</set></pattern>
-    <that>Ik heb de volgende komedietitel voor minderjarige kijkers: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- actie meerderjarig -->
-  <category>
-    <pattern></pattern>
-    <that>De beste titels voor genre 'actie' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- drama meerderjarig -->
-  <category>
-    <pattern></pattern>
-    <that>De beste titels voor genre 'drama' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- komedie meerderjarig -->
-  <category>
-    <pattern></pattern>
-    <that>De beste titels voor genre 'komedie' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- kijkt niet alleen -->
+  <!-- kijkt samen -->
   <category>
       <pattern><set>nee</set></pattern>
       <that>Kijk je deze serie _ alleen</that>
       <template>Met wie ga je samen kijken?</template>
   </category>
-
+  
+  <!-- partner? -->
   <category>
-      <pattern>^<set>partners</set></pattern>
+      <pattern><set>persvnw</set><set>partners</set></pattern>
       <that>Met wie ga je samen kijken</that>
       <template>
       <think><set name="partner"><input /></set></think>
       Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16?</template>
   </category>
 
+  <!-- kijkt samen; minderjarigen -->
   <category>
       <pattern><set>ja</set></pattern>
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste actitetitels voor minderjarige kijkers zijn: Arrow en Blindspot. Welke wil je zien?
+              De beste actitetitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramatitels voor minderjarige kijkers zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+              De beste dramatitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedietitels voor minderjarige kijkers zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+              De beste komedietitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
           </condition>
       </template>
   </category>
 
+  <!-- kijkt samen; meerderjarig -->
   <category>
       <pattern><set>nee</set></pattern>
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-            De beste titels voor genre 'actie' zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
+            De beste actietitels om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste titels voor genre 'drama' zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+            De beste dramatitels om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            De beste titels voor genre 'komedie' zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+            De beste komedietitels om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -188,4 +133,64 @@
       </template>
   </category>
 
+  <!-- actie minderjarig -->
+  <category>
+    <pattern><set>tvshowsaction</set></pattern>
+    <that>De beste actietitels voor minderjarigen ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- drama minderjarig -->
+  <category>
+    <pattern><set>tvshowsdrama</set></pattern>
+    <that>De beste dramatitel voor minderjarigen ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- komedie minderjarig -->
+  <category>
+    <pattern><set>tvshowscomedy</set></pattern>
+    <that>De beste komedietitels voor minderjarigen ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- actie meerderjarig -->
+  <category>
+    <pattern><set>tvshowsaction</set></pattern>
+    <that>De beste titels voor genre 'actie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- drama meerderjarig -->
+  <category>
+    <pattern><set>tvshowsdrama</set></pattern>
+    <that>De beste titels voor genre 'drama' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <!-- komedie meerderjarig -->
+  <category>
+    <pattern><set>tvshowscomedy</set></pattern>
+    <that>De beste titels voor genre 'komedie' zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></set></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+</topic>
 </aiml>
