@@ -9,35 +9,46 @@
       Wat voor soort tv-serie wil je kijken?</template>
   </category>
 
-  <topic name="serie">
     <category>
         <pattern><set>recommendation</set> SERIE</pattern>
         <template>
-        <think><set name="medium">serie</set></think>
+        <think><set name="medium">serie</set>
+        <set name="topic">serie</set></think>
         Wat voor soort tv-serie wil je kijken?</template>
-    </category>
+      </category>
 
     <category>
         <pattern><set>recommendation</set> TV</pattern>
         <template>
-        <think><set name="medium">serie</set></think>
+        <think><set name="medium">serie</set>
+        <set name="topic">serie</set></think>
         Wat voor soort tv-serie wil je kijken?</template>
     </category>
 
-      <category>
-        <pattern><set>genres</set></pattern>
-        <template>
-        <think><set name="genre"><input /></set></think>
-          <condition name="genre" value="actie">
-              Kijk je deze serie (genre: actie) alleen?
-          </condition>
-          <condition name="genre" value="drama">
-              Kijk je deze serie (genre: drama) alleen?
-          </condition>
-          <condition name="genre" value="komedie">
-              Kijk je deze serie (genre: komedie) alleen?
-          </condition>
-        </template>
+
+  <topic name="serie">
+    <category>
+      <pattern><set>genresactie</set></pattern>
+      <template>
+        <think><set name="genre">actie</set></think>
+        Kijk je deze serie (genre: actie) alleen?
+      </template>
+    </category>
+
+    <category>
+      <pattern><set>genresdrama</set></pattern>
+      <template>
+        <think><set name="genre">actie</set></think>
+        Kijk je deze serie (genre: drama) alleen?
+      </template>
+    </category>
+
+    <category>
+      <pattern><set>genrescomedy</set></pattern>
+      <template>
+        <think><set name="genre">actie</set></think>
+        Kijk je deze serie (genre: komedie) alleen?
+      </template>
     </category>
 
     <!-- kijkt samen -->
@@ -62,7 +73,7 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actiteseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
+                De beste actieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
                 De beste dramaseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
@@ -135,8 +146,8 @@
 
     <!-- keuze actie  -->
     <category>
-      <pattern><set>TVSHOWSACTION</set></pattern>
-      <that>DE BESTE ACTIESERIES ^</that>
+      <pattern><set>tvshowsaction</set></pattern>
+      <that>DE BESTE ACTIESERIES *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -145,8 +156,8 @@
 
     <!-- keuze drama -->
     <category>
-      <pattern><set>TVSHOWSDRAMA</set></pattern>
-      <that>DE BESTE DRAMASERIES ^</that>
+      <pattern><set>tvshowsdrama</set></pattern>
+      <that>DE BESTE DRAMASERIES *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -155,8 +166,8 @@
 
     <!-- keuze komedie -->
     <category>
-      <pattern><set>TVSHOWSCOMEDY</set></pattern>
-      <that>DE BESTE KOMEDIESERIES ^</that>
+      <pattern><set>tvshowscomedy</set></pattern>
+      <that>DE BESTE KOMEDIESERIES *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!

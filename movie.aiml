@@ -13,19 +13,27 @@
 
   <topic name="film">
     <category>
-        <pattern><set>genres</set></pattern>
+        <pattern><set>genresactie</set></pattern>
         <template>
-        <think><set name="genre"><input /></set></think>
-          <condition name="genre" value="actie">
-              Kijk je deze film (genre: actie) alleen?
-          </condition>
-          <condition name="genre" value="drama">
-              Kijk je deze film (genre: drama) alleen?
-          </condition>
-          <condition name="genre" value="komedie">
-              Kijk je deze film (genre: komedie) alleen?
-          </condition>
+        <think><set name="genre">actie</set></think>
+          Kijk je deze film (genre: actie) alleen?
         </template>
+    </category>
+
+    <category>
+      <pattern><set>genresdrama</set></pattern>
+      <template>
+        <think><set name="genre">drama</set></think>
+        Kijk je deze film (genre: drama) alleen?
+      </template>
+    </category>
+
+    <category>
+      <pattern><set>genreskomedie</set></pattern>
+      <template>
+        <think><set name="genre">komedie</set></think>
+        Kijk je deze film (genre: komedie) alleen?
+      </template>
     </category>
 
     <!-- kijkt niet alleen -->
@@ -123,8 +131,8 @@
 
     <!-- actie -->
     <category>
-      <pattern><set>MOVIESACTION</set></pattern>
-      <that>DE BESTE ACTIEFILMS ^ </that>
+      <pattern><set>moviesaction</set></pattern>
+      <that>DE BESTE ACTIEFILMS *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -133,8 +141,9 @@
 
     <!-- drama -->
     <category>
-      <pattern><set>MOVIESDRAMA</set></pattern>
-      <that>DE BESTE DRAMAFILM ^</that>
+      <pattern>
+        <set>MOVIESDRAMA</set></pattern>
+      <that>DE BESTE DRAMAFILM *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -142,8 +151,8 @@
     </category>
 
     <category>
-      <pattern><set>MOVIESDRAMA</set></pattern>
-      <that>DE BESTE DRAMAFILMS ^</that>
+      <pattern><set>moviesdrama</set></pattern>
+      <that>DE BESTE DRAMAFILMS *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -152,8 +161,8 @@
 
     <!-- komedie -->
     <category>
-      <pattern><set>MOVIESCOMEDY</set></pattern>
-      <that>DE BESTE KOMEDIEFILMS ^</that>
+      <pattern><set>moviescomedy</set></pattern>
+      <that>DE BESTE KOMEDIEFILMS *</that>
       <template>
         <think><set name="keuze"><input /></set></think>
         <get name="keuze" />, goede keuze! Veel kijkplezier!
@@ -162,18 +171,18 @@
 
     <!-- trilogie -->
     <category>
-      <pattern><set>TRILOGY</set></pattern>
+      <pattern><set>mib</set></pattern>
       <template>
         <think><set name="keuze"><input /></set></think>
-        Dus je wilt Men in Black kijken? Welk deel?
+        Wil je deel 1, 2 of 3 van Men in Black kijken?
       </template>
     </category>
 
     <category>
-      <pattern><set>TRILOGY</set></pattern>
-      <that>^ WELK DEEL?</that>
+      <pattern><set>trilogy</set></pattern>
+      <that>WIL JE DEEL 1, 2 OF 3 VAN MEN IN BLACK KIJKEN</that>
       <template>
-        <input />, goede keuze! Veel kijkplezier!
+        <set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
       </template>
     </category>
   </topic>
