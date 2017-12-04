@@ -46,7 +46,7 @@
       <that>Kijk je deze serie _ alleen</that>
       <template>Met wie ga je samen kijken?</template>
   </category>
-  
+
   <!-- partner? -->
   <category>
       <pattern><set>persvnw</set><set>partners</set></pattern>
@@ -62,13 +62,13 @@
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste actitetitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
+              De beste actiteseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramatitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+              De beste dramaseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedietitels voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+              De beste komedieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
           </condition>
       </template>
   </category>
@@ -79,13 +79,13 @@
       <that>Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-            De beste actietitels om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
+            De beste actieseries om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste dramatitels om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+            De beste dramaseries om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            De beste komedietitels om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+            De beste komedieseries om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -105,13 +105,13 @@
       <that>Ben je jonger dan 16</that>
       <template>
         <condition name="genre" value="actie">
-            De beste actietitels om alleen te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
+            De beste actieseries om alleen te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="drama">
-            De beste dramatitels om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+            De beste dramaseries om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            De beste komedietitels om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+            De beste komedieseries om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
         </condition>
       </template>
   </category>
@@ -122,75 +122,46 @@
       <that>Ben je jonger dan 16</that>
       <template>
           <condition name="genre" value="actie">
-              De beste actietitels voor minderjarigen om alleen te kijken zijn: Arrow en Blindspot. Welke wil je zien?
+              De beste actieseries voor minderjarigen om alleen te kijken zijn: Arrow en Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramatitels voor minderjarigen om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+              De beste dramaseries voor minderjarigen om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedietitels voor minderjarigen om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+              De beste komedieseries voor minderjarigen om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
           </condition>
       </template>
   </category>
 
-  <!-- actie minderjarig -->
+  <!-- keuze actie  -->
   <category>
     <pattern><set>tvshowsaction</set></pattern>
-    <that>De beste actietitels voor minderjarigen ^</that>
+    <that>De beste actieseries ^</that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- drama minderjarig -->
+  <!-- keuze drama -->
   <category>
     <pattern><set>tvshowsdrama</set></pattern>
-    <that>De beste dramatitel voor minderjarigen ^</that>
+    <that>De beste dramaseries ^</that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- komedie minderjarig -->
+  <!-- keuze komedie -->
   <category>
     <pattern><set>tvshowscomedy</set></pattern>
-    <that>De beste komedietitels voor minderjarigen ^</that>
+    <that>De beste komedieseries ^</that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- actie meerderjarig -->
-  <category>
-    <pattern><set>tvshowsaction</set></pattern>
-    <that>De beste titels voor genre 'actie' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- drama meerderjarig -->
-  <category>
-    <pattern><set>tvshowsdrama</set></pattern>
-    <that>De beste titels voor genre 'drama' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- komedie meerderjarig -->
-  <category>
-    <pattern><set>tvshowscomedy</set></pattern>
-    <that>De beste titels voor genre 'komedie' zijn: ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
 </topic>
 </aiml>

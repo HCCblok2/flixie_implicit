@@ -121,60 +121,39 @@
       </template>
   </category>
 
-  <!-- actie minderjarig -->
+  <!-- actie -->
   <category>
     <pattern><set>moviesaction</set></pattern>
-    <that>De beste actiefilms voor minderjarige kijkers zijn ^</that>
+    <that>De beste actiefilms ^</that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- drama minderjarig -->
+  <!-- drama -->
   <category>
     <pattern><set>moviesdrama</set></pattern>
-    <that>De beste drama* voor minderjarige kijkers ^</that>
+    <that>De beste dramafilm ^ </that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- komedie minderjarig -->
-  <category>
-    <pattern><set>moviescomedy</set></pattern>
-    <that>De beste komediefilms voor minderjarige kijkers zijn ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- actie meerderjarig -->
-  <category>
-    <pattern><set>moviesaction</set></pattern>
-    <that>De beste actiefilms zijn ^</that>
-    <template>
-      <think><set name="keuze"><input /></set></think>
-      <get name="keuze" />, goede keuze! Veel kijkplezier!
-    </template>
-  </category>
-
-  <!-- drama meerderjarig -->
   <category>
     <pattern><set>moviesdrama</set></pattern>
-    <that>De beste dramafilm* ^</that>
+    <that>De beste dramafilms ^ </that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
 
-  <!-- komedie meerderjarig -->
+  <!-- komedie -->
   <category>
     <pattern><set>moviescomedy</set></pattern>
-    <that>De beste komediefilms zijn ^</that>
+    <that>De beste komediefilms ^</that>
     <template>
       <think><set name="keuze"><input /></set></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
