@@ -48,12 +48,30 @@
               Ik heb de volgende actietitels voor minderjarige kijkers: Star Wars: Rogue One en Doctor Strange. Welke zou je willen zien?
           </condition>
           <condition name="genre" value="drama">
-              Ik heb de volgende actietitel voor minderjarige kijkers: Forrest Gump.
+              Ik heb de volgende dramatitel voor minderjarige kijkers: Forrest Gump.
           </condition>
           <condition name="genre" value="komedie">
               Ik heb de volgende komedietitel voor minderjarige kijkers: Men in Black 1,2,3 en She's The Man. Welke zou je willen zien?
           </condition>
       </template>
+  </category>
+
+  <category>
+    <pattern><input /></pattern>
+    <that>Ik heb de volgende * voor minderjarige kijkers: ^</that>
+    <template>
+      <think><set name="keuze"><input /></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
+  </category>
+
+  <category>
+    <pattern><input /></pattern>
+    <that>De beste titels voor genre * zijn: ^</that>
+    <template>
+      <think><set name="keuze"><input /></think>
+      <get name="keuze" />, goede keuze! Veel kijkplezier!
+    </template>
   </category>
 
   <category>
