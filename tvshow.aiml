@@ -42,7 +42,7 @@
     <pattern><input /></pattern>
     <that>Ik heb de volgende * voor minderjarige kijkers: ^</that>
     <template>
-      <think><set name="keuze"><input /></think>
+      <think><set name="keuze" /><input /></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
@@ -51,7 +51,7 @@
     <pattern><input /></pattern>
     <that>De beste titels voor genre * zijn: ^</that>
     <template>
-      <think><set name="keuze"><input /></think>
+      <think><set name="keuze" /><input /></think>
       <get name="keuze" />, goede keuze! Veel kijkplezier!
     </template>
   </category>
