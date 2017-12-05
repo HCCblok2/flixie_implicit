@@ -11,6 +11,15 @@
       </template>
   </category>
 
+  <category>
+      <pattern>^ FILM</pattern>
+      <template>
+      <think><set name="medium">film</set>
+      <set name="topic">film</set></think>
+      Wat voor soort film wil je kijken?
+      </template>
+  </category>
+
   <topic name="film">
     <category>
         <pattern><set>genresactie</set></pattern>
@@ -45,16 +54,7 @@
 
     <!-- partner? -->
     <category>
-        <pattern><set>persvnw</set><set>partners</set></pattern>
-        <that>MET WIE GA JE SAMEN KIJKEN</that>
-        <template>
-          <think><set name="partner"><input /></set></think>
-          Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16?
-        </template>
-    </category>
-
-    <category>
-        <pattern><set>partners</set></pattern>
+        <pattern>^ <set>partners</set></pattern>
         <that>MET WIE GA JE SAMEN KIJKEN</that>
         <template>
           <think><set name="partner"><input /></set></think>
