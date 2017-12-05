@@ -53,19 +53,28 @@
         </template>
     </category>
 
+    <category>
+        <pattern><set>partners</set></pattern>
+        <that>MET WIE GA JE SAMEN KIJKEN</that>
+        <template>
+          <think><set name="partner"><input /></set></think>
+          Ben je zelf jonger dan 16 of is een van de kijkers jonger dan 16?
+        </template>
+    </category>
+
     <!-- kijkt samen; minderjarigen -->
     <category>
         <pattern><set>ja</set></pattern>
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actiefilms voor minderjarigen om samen met <get name="partner"/> te kijken zijn: Star Wars: Rogue One en Doctor Strange. Welke wil je zien?
+                De beste actiefilms voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Star Wars: Rogue One en Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramafilm voor minderjarigen om samen met <get name="partner"/> te kijken zijn: Forrest Gump. Welke wil je zien?
+                De beste dramafilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Forrest Gump. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
-                De beste komediefilm voor minderjarigen om samen met <get name="partner"/> te kijken zijn: Men in Black 1,2,3 en She's The Man. Welke zou je willen zien?
+                De beste komediefilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Men in Black 1,2,3 en She's The Man. Welke zou je willen zien?
             </condition>
         </template>
     </category>
@@ -76,13 +85,13 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-              De beste actiefilms om samen met <get name="partner"/> te kijken zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
+              De beste actiefilms om samen met (<get name="partner"/>) te kijken zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramafilms om samen met <get name="partner"/> te kijken zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
+              De beste dramafilms om samen met (<get name="partner"/>) te kijken zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komediefilms om samen met <get name="partner"/> te kijken zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
+              De beste komediefilms om samen met (<get name="partner"/>) te kijken zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
           </condition>
         </template>
     </category>
@@ -151,7 +160,7 @@
       <pattern><set>trilogy</set></pattern>
       <that>WIL JE DEEL 1, 2 OF 3 VAN MEN IN BLACK KIJKEN</that>
       <template>
-        <set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
+        <get name="keuze" /><set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
       </template>
     </category>
   </topic>
