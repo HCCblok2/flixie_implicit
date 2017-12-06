@@ -68,13 +68,13 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actiefilms voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Star Wars: Rogue One en Doctor Strange. Welke wil je zien?
+                De beste opties voor een actiefilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramafilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Forrest Gump. Welke wil je zien?
+                De beste opties voor een dramafilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Forrest Gump. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
-                De beste komediefilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: Men in Black 1,2,3 en She's The Man. Welke zou je willen zien?
+                De beste opties voor een komediefilm voor minderjarigen om samen met (<get name="partner"/>) te kijken zijn: She's The Man. Welke zou je willen zien?
             </condition>
         </template>
     </category>
@@ -85,13 +85,13 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-              De beste actiefilms om samen met (<get name="partner"/>) te kijken zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
+              De beste opties voor een actiefilm om samen met (<get name="partner"/>) te kijken zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramafilms om samen met (<get name="partner"/>) te kijken zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
+              De beste opties voor een dramafilm om samen met (<get name="partner"/>) te kijken zijn: Forrest Gump en Intouchables. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komediefilms om samen met (<get name="partner"/>) te kijken zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
+              De beste opties voor een komediefilm om samen met (<get name="partner"/>) te kijken zijn: The Big Short en She's The Man. Welke wil je zien?
           </condition>
         </template>
     </category>
@@ -110,13 +110,13 @@
         <that>BEN JE JONGER DAN 16</that>
         <template>
           <condition name="genre" value="actie">
-              De beste actiefilms zijn: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke wil je zien?
+              De beste opties voor een actiefilm zijn: Star Wars: Rogue One. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramafilms zijn: 12 Years A Slave, Forrest Gump en Intouchables. Welke wil je zien?
+              De beste opties voor een dramafilm zijn: 12 Years A Slave. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komediefilms zijn: Men in Black 1,2,3, The Big Short en She's The Man. Welke wil je zien?
+              De beste opties voor een komediefilm zijn: Men in Black 1,2,3. Welke wil je zien?
           </condition>
         </template>
     </category>
@@ -127,13 +127,13 @@
         <that>BEN JE JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actiefilms voor minderjarige kijkers zijn: Star Wars: Rogue One en Doctor Strange. Welke wil je zien?
+                De beste opties voor een actiefilm voor minderjarige kijkers zijn: Star Wars: Rogue One. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramafilm voor minderjarige kijkers is: Forrest Gump. Welke wil je zien?
+                Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
             </condition>
             <condition name="genre" value="komedie">
-                De beste komediefilms voor minderjarige kijkers zijn: Men in Black 1,2,3 en She's The Man. Welke wil je zien?
+                De beste opties voor een komediefilm voor minderjarige kijkers zijn: Men in Black 1,2,3. Welke wil je zien?
             </condition>
         </template>
     </category>
