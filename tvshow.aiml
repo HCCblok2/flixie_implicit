@@ -73,13 +73,13 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow en Blindspot. Welke wil je zien?
+                De beste actieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramaseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+                De beste dramaseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
-                De beste komedieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+                De beste komedieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
             </condition>
         </template>
     </category>
@@ -90,13 +90,13 @@
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-              De beste actieseries om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
+              De beste actieseries om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramaseries om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+              De beste dramaseries om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedieseries om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+              De beste komedieseries om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
           </condition>
         </template>
     </category>
@@ -116,13 +116,13 @@
         <that>BEN JE JONGER DAN 16</that>
         <template>
           <condition name="genre" value="actie">
-              De beste actieseries om alleen te kijken zijn: The Punisher, Arrow en Blindspot. Welke wil je zien?
+              De beste actieseries om alleen te kijken zijn: Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramaseries om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+              De beste dramaseries om alleen te kijken zijn: The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedieseries om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+              De beste komedieseries om alleen te kijken zijn: Rick and Morty. Welke wil je zien?
           </condition>
         </template>
     </category>
@@ -133,13 +133,13 @@
         <that>BEN JE JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actieseries voor minderjarigen om alleen te kijken zijn: Arrow en Blindspot. Welke wil je zien?
+                De beste actieseries voor minderjarigen om alleen te kijken zijn: Blindspot. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramaseries voor minderjarigen om alleen te kijken zijn: Stranger Things, Sherlock en The Flash. Welke wil je zien?
+                De beste dramaseries voor minderjarigen om alleen te kijken zijn: The Flash. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
-                De beste komedieseries voor minderjarigen om alleen te kijken zijn: How I Met Your Mother, Modern Family en Rick and Morty. Welke wil je zien?
+                De beste komedieseries voor minderjarigen om alleen te kijken zijn: Rick and Morty. Welke wil je zien?
             </condition>
         </template>
     </category>
