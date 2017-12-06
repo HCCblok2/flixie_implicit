@@ -11,3 +11,7 @@ node-js-getting-started
 *.json
 
 Procfile
+
+*.sh
+
+.DS_Store
