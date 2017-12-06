@@ -1,0 +1,13 @@
+heroku
+
+node_modules
+
+node-js-getting-started
+
+*.log
+
+*.bot
+
+*.json
+
+Procfile
