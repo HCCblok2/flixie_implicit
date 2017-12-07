@@ -160,7 +160,7 @@
       <pattern><set>trilogy</set></pattern>
       <that>WIL JE DEEL 1, 2 OF 3 VAN MEN IN BLACK KIJKEN</that>
       <template>
-        <get name="keuze" /><set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
+        <get name="keuze" /> <set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
       </template>
     </category>
   </topic>
