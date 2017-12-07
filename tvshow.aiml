@@ -44,7 +44,7 @@
     </category>
 
     <category>
-      <pattern><set>genrescomedy</set></pattern>
+      <pattern><set>genreskomedie</set></pattern>
       <template>
         <think><set name="genre">actie</set></think>
         Kijk je deze serie (genre: komedie) alleen?
