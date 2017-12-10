@@ -22,7 +22,26 @@
 
   <topic name="film">
     <category>
+        <pattern>^ <set>genresactie</set> ^ </pattern>
+        <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
+        <template>
+        <think><set name="genre">actie</set></think>
+          Kijk je deze film (genre: actie) alleen?
+        </template>
+    </category>
+
+    <category>
         <pattern><set>genresactie</set></pattern>
+        <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
+        <template>
+        <think><set name="genre">actie</set></think>
+          Kijk je deze film (genre: actie) alleen?
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>genresdrama</set> ^ </pattern>
+        <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
         <template>
         <think><set name="genre">actie</set></think>
           Kijk je deze film (genre: actie) alleen?
@@ -31,6 +50,7 @@
 
     <category>
       <pattern><set>genresdrama</set></pattern>
+      <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
       <template>
         <think><set name="genre">drama</set></think>
         Kijk je deze film (genre: drama) alleen?
@@ -38,7 +58,17 @@
     </category>
 
     <category>
+        <pattern>^ <set>genreskomedie</set> ^ </pattern>
+        <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
+        <template>
+        <think><set name="genre">actie</set></think>
+          Kijk je deze film (genre: actie) alleen?
+        </template>
+    </category>
+
+    <category>
       <pattern><set>genreskomedie</set></pattern>
+      <that>WAT VOOR SOORT FILM WIL JE KIJKEN</that>
       <template>
         <think><set name="genre">komedie</set></think>
         Kijk je deze film (genre: komedie) alleen?
@@ -47,14 +77,14 @@
 
     <!-- kijkt niet alleen -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>KIJK JE DEZE FILM _ ALLEEN</that>
         <template>Met wie ga je samen kijken?</template>
     </category>
 
     <!-- partner? -->
     <category>
-        <pattern>^ <set>partners</set></pattern>
+        <pattern>^<set>partners</set>^</pattern>
         <that>MET WIE GA JE SAMEN KIJKEN</that>
         <template>
           <think><set name="partner"><input /></set></think>
@@ -64,7 +94,7 @@
 
     <!-- kijkt samen; minderjarigen -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
@@ -81,7 +111,7 @@
 
     <!-- kijkt samen; geen minderjarigen -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
@@ -98,7 +128,7 @@
 
     <!-- kijkt alleen -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <think><set name="partner">alleen</set></think>
         <that>KIJK JE DEZE FILM _ ALLEEN</that>
         <template>Ben je jonger dan 16?</template>
@@ -106,34 +136,34 @@
 
     <!-- kijkt alleen; niet jonger dan 16 -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>BEN JE JONGER DAN 16</that>
         <template>
           <condition name="genre" value="actie">
-              De beste opties voor een actiefilm zijn: Star Wars: Rogue One. Welke wil je zien?
+              De beste optie voor een actiefilm is: Star Wars: Rogue One. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste opties voor een dramafilm zijn: 12 Years A Slave. Welke wil je zien?
+              De beste optie voor een dramafilm is: 12 Years A Slave. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste opties voor een komediefilm zijn: Men in Black 1,2,3. Welke wil je zien?
+              De beste optie voor een komediefilm is: Men in Black. Welke wil je zien?
           </condition>
         </template>
     </category>
 
     <!-- kijkt alleen; jonger dan 16 -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <that>BEN JE JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste opties voor een actiefilm voor minderjarige kijkers zijn: Star Wars: Rogue One. Welke wil je zien?
+                De beste optie voor een actiefilm voor minderjarige kijkers is: Star Wars: Rogue One. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
                 Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
             </condition>
             <condition name="genre" value="komedie">
-                De beste opties voor een komediefilm voor minderjarige kijkers zijn: Men in Black 1,2,3. Welke wil je zien?
+                De beste optie voor een komediefilm voor minderjarige kijkers is: Men in Black. Welke wil je zien?
             </condition>
         </template>
     </category>
@@ -160,7 +190,7 @@
       <pattern><set>trilogy</set></pattern>
       <that>WIL JE DEEL 1, 2 OF 3 VAN MEN IN BLACK KIJKEN</that>
       <template>
-        <get name="keuze" /> <set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
+        Men in Black <set name="deel"><input /></set>, goede keuze! Veel kijkplezier!
       </template>
     </category>
   </topic>

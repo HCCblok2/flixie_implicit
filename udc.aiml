@@ -18,4 +18,24 @@
      <template>Sorry, kan je dat herformuleren?</template>
    </category>
 
+   <category>
+     <pattern>DANKJEWEL</pattern>
+     <template>Graag gedaan!</template>
+  </category>
+
+  <category>
+    <pattern>DANKJE</pattern>
+    <template>Graag gedaan!</template>
+ </category>
+
+  <category>
+    <pattern>DOEI</pattern>
+    <template>Tot ziens!</template>
+ </category>
+
+ <category>
+   <pattern>TOT ZIENS</pattern>
+   <template>Tot ziens!</template>
+</category>
+
 </aiml>

@@ -25,10 +25,18 @@
         Wat voor soort tv-serie wil je kijken?</template>
     </category>
 
+    <category>
+      <pattern>^ SERIE ^</pattern>
+      <template>
+        <think><set name="medium">serie</set>
+        <set name="topic">serie</set></think>
+        Wat voor soort tv-serie wil je kijken?</template>
+    </category>
+
 
   <topic name="serie">
     <category>
-      <pattern><set>genresactie</set></pattern>
+      <pattern>^<set>genresactie</set>^</pattern>
       <template>
         <think><set name="genre">actie</set></think>
         Kijk je deze serie (genre: actie) alleen?
@@ -36,31 +44,31 @@
     </category>
 
     <category>
-      <pattern><set>genresdrama</set></pattern>
+      <pattern>^<set>genresdrama</set>^</pattern>
       <template>
-        <think><set name="genre">actie</set></think>
+        <think><set name="genre">drama</set></think>
         Kijk je deze serie (genre: drama) alleen?
       </template>
     </category>
 
     <category>
-      <pattern><set>genreskomedie</set></pattern>
+      <pattern>^<set>genreskomedie</set>^</pattern>
       <template>
-        <think><set name="genre">actie</set></think>
+        <think><set name="genre">komedie</set></think>
         Kijk je deze serie (genre: komedie) alleen?
       </template>
     </category>
 
     <!-- kijkt samen -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>KIJK JE DEZE SERIE _ ALLEEN</that>
         <template>Met wie ga je samen kijken?</template>
     </category>
 
     <!-- partner? -->
     <category>
-        <pattern><set>persvnw</set><set>partners</set></pattern>
+        <pattern>^<set>partners</set>^</pattern>
         <that>MET WIE GA JE SAMEN KIJKEN</that>
         <template>
         <think><set name="partner"><input /></set></think>
@@ -69,14 +77,14 @@
 
     <!-- kijkt samen; minderjarigen -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Arrow. Welke wil je zien?
+                De beste actieserie voor minderjarige kijkers om samen met (<get name="partner" />) te kijken is: Arrow. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramaseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
+                De beste dramaseries voor minderjarige kijkers om samen met (<get name="partner" />) te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
                 De beste komedieseries voor minderjarige kijkers om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
@@ -86,24 +94,24 @@
 
     <!-- kijkt samen; meerderjarig -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>BEN JE ZELF JONGER DAN 16 OF IS EEN VAN DE KIJKERS JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-              De beste actieseries om samen met <get name="partner" /> te kijken zijn: The Punisher, Arrow. Welke wil je zien?
+              De beste actieseries om samen met (<get name="partner" />) te kijken zijn: The Punisher, Arrow. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramaseries om samen met <get name="partner" /> te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
+              De beste dramaseries om samen met (<get name="partner" />) te kijken zijn: Stranger Things, Sherlock. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedieseries om samen met <get name="partner" /> te kijken zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+              De beste komedieseries om samen met (<get name="partner" />) te kijken zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
           </condition>
         </template>
     </category>
 
     <!-- kijkt alleen -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <that>KIJK JE DEZE SERIE _ ALLEEN</that>
         <template>
         <think><set name="partner">alleen</set></think>
@@ -112,34 +120,34 @@
 
     <!-- kijkt alleen; niet jonger dan 16 -->
     <category>
-        <pattern><set>nee</set></pattern>
+        <pattern>^<set>nee</set>^</pattern>
         <that>BEN JE JONGER DAN 16</that>
         <template>
           <condition name="genre" value="actie">
-              De beste actieseries om alleen te kijken zijn: Blindspot. Welke wil je zien?
+              De beste actieserie om alleen te kijken is: Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              De beste dramaseries om alleen te kijken zijn: The Flash. Welke wil je zien?
+              De beste dramaserie om alleen te kijken is: The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              De beste komedieseries om alleen te kijken zijn: Rick and Morty. Welke wil je zien?
+              De beste komedieserie om alleen te kijken is: Rick and Morty. Welke wil je zien?
           </condition>
         </template>
     </category>
 
     <!-- kijkt alleen; jonger dan 16 -->
     <category>
-        <pattern><set>ja</set></pattern>
+        <pattern>^<set>ja</set>^</pattern>
         <that>BEN JE JONGER DAN 16</that>
         <template>
             <condition name="genre" value="actie">
-                De beste actieseries voor minderjarigen om alleen te kijken zijn: Blindspot. Welke wil je zien?
+                De beste actieserie voor minderjarigen om alleen te kijken is: Blindspot. Welke wil je zien?
             </condition>
             <condition name="genre" value="drama">
-                De beste dramaseries voor minderjarigen om alleen te kijken zijn: The Flash. Welke wil je zien?
+                De beste dramaserie voor minderjarigen om alleen te kijken is: The Flash. Welke wil je zien?
             </condition>
             <condition name="genre" value="komedie">
-                De beste komedieseries voor minderjarigen om alleen te kijken zijn: Rick and Morty. Welke wil je zien?
+                De beste komedieserie voor minderjarigen om alleen te kijken is: Rick and Morty. Welke wil je zien?
             </condition>
         </template>
     </category>
