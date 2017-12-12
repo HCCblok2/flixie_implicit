@@ -2,13 +2,13 @@
 <aiml>
 
   <category>
-    <pattern><set>recommendation</set></pattern>
+    <pattern>^ <set>recommendation</set> ^</pattern>
     <template>Hoi, ik ben Flixie! Ik help je met het vinden van een serie of een film.
     Welke van de twee wil je graag kijken?</template>
   </category>
 
-  <category>
-    <pattern><set>recommendation</set></pattern>
+  <!-- <category>
+    <pattern><set>genres</set></pattern>
     <that>WIL JE EEN FILM OF SERIE KIJKEN</that>
     <template></template>
   </category>
@@ -22,6 +22,7 @@
     <pattern>^ komediefilm ^</pattern>
     <template>
       <think><set name="medium">film</set>
+      <set name="topic">film</set>
       <set name="genre">komedie</set></think>
     </template>
   </category>
@@ -30,6 +31,7 @@
     <pattern>^ komedieserie ^</pattern>
     <template>
       <think><set name="medium">serie</set>
+      <set name="topic">serie</set>
       <set name="genre">komedie</set></think>
     </template>
   </category>
@@ -43,6 +45,7 @@
     <pattern>^ dramafilm ^</pattern>
     <template>
       <think><set name="medium">film</set>
+      <set name="topic">film</set>
       <set name="genre">drama</set></think>
     </template>
   </category>
@@ -51,6 +54,7 @@
     <pattern>^ dramaserie ^</pattern>
     <template>
       <think><set name="medium">serie</set>
+      <set name="topic">serie</set>
       <set name="genre">drama</set></think>
     </template>
   </category>
@@ -64,6 +68,7 @@
     <pattern>^ actiefilm ^</pattern>
     <template>
       <think><set name="medium">film</set>
+      <set name="topic">film</set>
       <set name="genre">actie</set></think>
     </template>
   </category>
@@ -72,9 +77,10 @@
     <pattern>^ actieserie ^</pattern>
     <template>
       <think><set name="medium">serie</set>
+      <set name="topic">serie</set>
       <set name="genre">actie</set></think>
     </template>
-  </category>
+  </category> -->
 
   <!-- <category>
     <pattern>*</pattern>

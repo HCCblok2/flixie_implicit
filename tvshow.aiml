@@ -3,8 +3,6 @@
   <!-- TV-SERIE -->
   <category>
       <pattern><set>recommendation</set> TV-SERIE</pattern>
-      <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-      WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
       <template>
       <think><set name="medium">serie</set>
       <set name="topic">serie</set></think>
@@ -13,8 +11,6 @@
 
     <category>
         <pattern><set>recommendation</set> SERIE</pattern>
-        <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-        WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
         <template>
         <think><set name="medium">serie</set>
         <set name="topic">serie</set></think>
@@ -23,8 +19,6 @@
 
     <category>
         <pattern><set>recommendation</set> TV</pattern>
-        <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-        WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
         <template>
         <think><set name="medium">serie</set>
         <set name="topic">serie</set></think>
@@ -33,8 +27,6 @@
 
     <category>
       <pattern>^ SERIE ^</pattern>
-      <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-      WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
       <template>
         <think><set name="medium">serie</set>
         <set name="topic">serie</set></think>

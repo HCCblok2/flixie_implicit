@@ -4,8 +4,6 @@
   <!-- FILM -->
   <category>
       <pattern><set>recommendation</set> FILM</pattern>
-      <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-      WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
       <template>
       <think><set name="medium">film</set>
       <set name="topic">film</set></think>
@@ -15,8 +13,6 @@
 
   <category>
       <pattern>^ FILM ^</pattern>
-      <that>HOI, IK BEN FLIXIE! IK HELP JE MET HET VINDEN VAN EEN SERIE OF EEN FILM.
-      WELKE VAN DE TWEE WIL JE GRAAG KIJKEN</that>
       <template>
       <think><set name="medium">film</set>
       <set name="topic">film</set></think>
