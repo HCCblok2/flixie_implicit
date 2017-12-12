@@ -4,7 +4,76 @@
   <category>
     <pattern><set>recommendation</set></pattern>
     <template>Hoi, ik ben Flixie! Ik help je met het vinden van een serie of een film.
-    Welke wil je graag kijken?</template>
+    Welke van de twee wil je graag kijken?</template>
+  </category>
+
+  <category>
+    <pattern><set>recommendation</set></pattern>
+    <that>WIL JE EEN FILM OF SERIE KIJKEN</that>
+    <template></template>
+  </category>
+
+  <category>
+    <pattern>^ komedie ^</pattern>
+    <template>Wil je een film of serie kijken?</template>
+  </category>
+
+  <category>
+    <pattern>^ komediefilm ^</pattern>
+    <template>
+      <think><set name="medium">film</set>
+      <set name="genre">komedie</set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ komedieserie ^</pattern>
+    <template>
+      <think><set name="medium">serie</set>
+      <set name="genre">komedie</set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ drama ^</pattern>
+    <template>Wil je een film of serie kijken?</template>
+  </category>
+
+  <category>
+    <pattern>^ dramafilm ^</pattern>
+    <template>
+      <think><set name="medium">film</set>
+      <set name="genre">drama</set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ dramaserie ^</pattern>
+    <template>
+      <think><set name="medium">serie</set>
+      <set name="genre">drama</set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ actie ^</pattern>
+    <template>Wil je een film of serie kijken?</template>
+  </category>
+
+  <category>
+    <pattern>^ actiefilm ^</pattern>
+    <template>
+      <think><set name="medium">film</set>
+      <set name="genre">actie</set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ actieserie ^</pattern>
+    <template>
+      <think><set name="medium">serie</set>
+      <set name="genre">actie</set></think>
+    </template>
   </category>
 
   <!-- <category>
